@@ -1,0 +1,24 @@
+name: MATLAB tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Run assignment tests in MATLAB
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v3
+      - name: Compare with var and test polynomial addition
+        uses: matlab-actions/run-command@v3
+        with:
+          command: test_assignment

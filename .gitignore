@@ -1,0 +1,8 @@
+# MATLAB/Octave temporary files
+*.asv
+*.m~
+octave-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
