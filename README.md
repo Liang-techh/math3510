@@ -94,13 +94,6 @@ column vectors, leading zeros, complete cancellation, integer inputs, and
 complex coefficients. They also check the identity
 `polyval(polyadd(p,q),t) = polyval(p,t) + polyval(q,t)` for 100 random pairs.
 
-## 中文说明
-
-在 MATLAB 的 Current Folder 中打开仓库文件夹，再输入 `test_assignment`。
-第一题先计算平均值，再按题目给出的 `n - 1` 公式计算样本方差；第二题在较短的
-系数向量左侧补零，让相同次数的系数对齐后相加。两份函数文件可以独立使用，
-测试文件用于检查结果并展示与 `var` 的比较。
-
 ## Documentation
 
 - MathWorks: [Create and Evaluate Polynomials](https://www.mathworks.com/help/matlab/math/create-and-evaluate-polynomials.html).
